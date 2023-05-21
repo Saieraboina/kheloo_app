@@ -53,7 +53,7 @@ class _CarouselWithStepIndicatorState extends State<CarouselWithStepIndicator> {
                 shape: BoxShape.rectangle,
                 color: _current == index
                     ? Colors.amber
-                    : const Color.fromRGBO(0, 0, 0, 0.4),
+                    : Colors.grey,
               ),
             );
           }).toList(),
