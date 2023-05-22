@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class NavBar extends StatefulWidget {
-  const NavBar({super.key});
+  const NavBar({Key? key, }) : super(key: key);
 
   @override
   State<NavBar> createState() => _NavBarState();
@@ -99,7 +99,7 @@ List<Widget> buttonsOfSlide = [
         height: double.maxFinite,
         child: ScrollConfiguration(
           behavior: CustomScrollBehaviour(),
-          child:  Scrollbar(
+          child: Scrollbar(
             child: SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               physics: const RangeMaintainingScrollPhysics(),
@@ -109,144 +109,8 @@ List<Widget> buttonsOfSlide = [
                     padding: const EdgeInsets.symmetric(horizontal: 15),
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
-                      children:const [
-                         Icon(
-                          Icons.edit,
-                          color: Colors.white,
-                          size: 35,
-                        ),
-                         Text(
-                          "Name",
-                          style: TextStyle(color: Colors.white),
-                        )
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 15),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: const[
-                         Icon(
-                          Icons.edit,
-                          color: Colors.white,
-                          size: 35,
-                        ),
-                      Text(
-                          "Name",
-                          style: TextStyle(color: Colors.white),
-                        )
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 15),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: const[
-                        Icon(
-                          Icons.edit,
-                          color: Colors.white,
-                          size: 35,
-                        ),
-                        Text(
-                          "Name",
-                          style: TextStyle(color: Colors.white),
-                        )
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 15),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children:const [
-                         Icon(
-                          Icons.edit,
-                          color: Colors.white,
-                          size: 35,
-                        ),
-                      Text(
-                          "Name",
-                          style: TextStyle(color: Colors.white),
-                        )
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 15),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: const[
-                         Icon(
-                          Icons.edit,
-                          color: Colors.white,
-                          size: 35,
-                        ),
-                         Text(
-                          "Name",
-                          style: TextStyle(color: Colors.white),
-                        )
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 15),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
                       children: const [
                         Icon(
-                          Icons.edit,
-                          color: Colors.white,
-                          size: 35,
-                        ),
-                         Text(
-                          "Name",
-                          style: TextStyle(color: Colors.white),
-                        )
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 15),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: const [
-                         Icon(
-                          Icons.edit,
-                          color: Colors.white,
-                          size: 35,
-                        ),
-                         Text(
-                          "Name",
-                          style: TextStyle(color: Colors.white),
-                        )
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 15),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: const [
-                         Icon(
-                          Icons.edit,
-                          color: Colors.white,
-                          size: 35,
-                        ),
-                         Text(
-                          "Name",
-                          style: TextStyle(color: Colors.white),
-                        )
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 15),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: const [
-                         Icon(
                           Icons.edit,
                           color: Colors.white,
                           size: 35,
@@ -268,7 +132,7 @@ List<Widget> buttonsOfSlide = [
                           color: Colors.white,
                           size: 35,
                         ),
-                         Text(
+                        Text(
                           "Name",
                           style: TextStyle(color: Colors.white),
                         )
@@ -280,12 +144,148 @@ List<Widget> buttonsOfSlide = [
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: const [
-                         Icon(
+                        Icon(
                           Icons.edit,
                           color: Colors.white,
                           size: 35,
                         ),
-                         Text(
+                        Text(
+                          "Name",
+                          style: TextStyle(color: Colors.white),
+                        )
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 15),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: const [
+                        Icon(
+                          Icons.edit,
+                          color: Colors.white,
+                          size: 35,
+                        ),
+                        Text(
+                          "Name",
+                          style: TextStyle(color: Colors.white),
+                        )
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 15),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: const [
+                        Icon(
+                          Icons.edit,
+                          color: Colors.white,
+                          size: 35,
+                        ),
+                        Text(
+                          "Name",
+                          style: TextStyle(color: Colors.white),
+                        )
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 15),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: const [
+                        Icon(
+                          Icons.edit,
+                          color: Colors.white,
+                          size: 35,
+                        ),
+                        Text(
+                          "Name",
+                          style: TextStyle(color: Colors.white),
+                        )
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 15),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: const [
+                        Icon(
+                          Icons.edit,
+                          color: Colors.white,
+                          size: 35,
+                        ),
+                        Text(
+                          "Name",
+                          style: TextStyle(color: Colors.white),
+                        )
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 15),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: const [
+                        Icon(
+                          Icons.edit,
+                          color: Colors.white,
+                          size: 35,
+                        ),
+                        Text(
+                          "Name",
+                          style: TextStyle(color: Colors.white),
+                        )
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 15),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: const [
+                        Icon(
+                          Icons.edit,
+                          color: Colors.white,
+                          size: 35,
+                        ),
+                        Text(
+                          "Name",
+                          style: TextStyle(color: Colors.white),
+                        )
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 15),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: const [
+                        Icon(
+                          Icons.edit,
+                          color: Colors.white,
+                          size: 35,
+                        ),
+                        Text(
+                          "Name",
+                          style: TextStyle(color: Colors.white),
+                        )
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 15),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: const [
+                        Icon(
+                          Icons.edit,
+                          color: Colors.white,
+                          size: 35,
+                        ),
+                        Text(
                           "Name",
                           style: TextStyle(color: Colors.white),
                         )
