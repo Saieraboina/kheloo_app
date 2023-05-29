@@ -15,7 +15,6 @@ class _NavBarState extends State<NavBar> {
         const SizedBox(
           height: 130,
         ),
-
         Positioned(
           bottom: 0,
           right: 0,
@@ -48,14 +47,6 @@ class _NavBarState extends State<NavBar> {
         ),
       ],
     );
-  }
-}
-
-class CustomScrollBehaviour extends ScrollBehavior {
-  @override
-  Widget buildOverscrollIndicator(
-      BuildContext context, Widget child, ScrollableDetails details) {
-    return child;
   }
 }
 
@@ -93,207 +84,117 @@ List<Widget> buttonsOfSlide = [
 
   // flex, scrollable row
   Expanded(
-      flex: 2,
+      flex: 1,
       child: Container(
         color: Colors.black,
         height: double.maxFinite,
-        child: ScrollConfiguration(
-          behavior: CustomScrollBehaviour(),
-          child: Scrollbar(
-            child: SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              physics: const RangeMaintainingScrollPhysics(),
-              child: Row(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 15),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: const [
-                        Icon(
-                          Icons.edit,
-                          color: Colors.white,
-                          size: 35,
-                        ),
-                        Text(
-                          "Name",
-                          style: TextStyle(color: Colors.white),
-                        )
-                      ],
-                    ),
+        child: Scrollbar(
+          child: SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            physics: const RangeMaintainingScrollPhysics(),
+            child: Row(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 15),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children:  [
+                      IconButton(onPressed:(){} ,
+                        icon: const Icon(Icons.sports_cricket,size: 35,),
+                        color: Colors.amber,
+                      ),
+                      const Text(
+                        "Sports",
+                        style: TextStyle(color: Colors.white,),
+                      )
+                    ],
                   ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 15),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: const [
-                        Icon(
-                          Icons.edit,
-                          color: Colors.white,
-                          size: 35,
-                        ),
-                        Text(
-                          "Name",
-                          style: TextStyle(color: Colors.white),
-                        )
-                      ],
-                    ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 15),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children:  [
+                      IconButton(
+                        onPressed:(){} ,
+                        icon: const Icon(Icons.casino_rounded,size: 35,),
+                        color: Colors.amber,
+                      ),
+                      const Text(
+                        "Live Casino",
+                        style: TextStyle(color: Colors.white,),
+                      )
+                    ],
                   ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 15),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: const [
-                        Icon(
-                          Icons.edit,
-                          color: Colors.white,
-                          size: 35,
-                        ),
-                        Text(
-                          "Name",
-                          style: TextStyle(color: Colors.white),
-                        )
-                      ],
-                    ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 15),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children:  [
+                      IconButton(onPressed:(){} ,
+                        icon: const Icon(Icons.scatter_plot_sharp,size: 35,),
+                        color: Colors.amber,
+                      ),
+                      const Text(
+                        "Slots",
+                        style: TextStyle(color: Colors.white,),
+                      )
+                    ],
                   ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 15),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: const [
-                        Icon(
-                          Icons.edit,
-                          color: Colors.white,
-                          size: 35,
-                        ),
-                        Text(
-                          "Name",
-                          style: TextStyle(color: Colors.white),
-                        )
-                      ],
-                    ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 15),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: const [
+                      Icon(
+                        Icons.account_balance_wallet_rounded,
+                        color: Colors.amber,
+                        size: 35,
+                      ),
+                      Text(
+                        "Lottery",
+                        style: TextStyle(color: Colors.white),
+                      )
+                    ],
                   ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 15),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: const [
-                        Icon(
-                          Icons.edit,
-                          color: Colors.white,
-                          size: 35,
-                        ),
-                        Text(
-                          "Name",
-                          style: TextStyle(color: Colors.white),
-                        )
-                      ],
-                    ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 15),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: const [
+                      Icon(
+                        Icons.catching_pokemon_rounded,
+                        color: Colors.amber,
+                        size: 35,
+                      ),
+                      Text(
+                        "Poker",
+                        style: TextStyle(color: Colors.white),
+                      )
+                    ],
                   ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 15),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: const [
-                        Icon(
-                          Icons.edit,
-                          color: Colors.white,
-                          size: 35,
-                        ),
-                        Text(
-                          "Name",
-                          style: TextStyle(color: Colors.white),
-                        )
-                      ],
-                    ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 15),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: const [
+                      Icon(
+                        Icons.sports_kabaddi_rounded,
+                        color: Colors.amber,
+                        size: 35,
+                      ),
+                      Text(
+                        "Table Games",
+                        style: TextStyle(color: Colors.white),
+                      )
+                    ],
                   ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 15),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: const [
-                        Icon(
-                          Icons.edit,
-                          color: Colors.white,
-                          size: 35,
-                        ),
-                        Text(
-                          "Name",
-                          style: TextStyle(color: Colors.white),
-                        )
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 15),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: const [
-                        Icon(
-                          Icons.edit,
-                          color: Colors.white,
-                          size: 35,
-                        ),
-                        Text(
-                          "Name",
-                          style: TextStyle(color: Colors.white),
-                        )
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 15),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: const [
-                        Icon(
-                          Icons.edit,
-                          color: Colors.white,
-                          size: 35,
-                        ),
-                        Text(
-                          "Name",
-                          style: TextStyle(color: Colors.white),
-                        )
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 15),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: const [
-                        Icon(
-                          Icons.edit,
-                          color: Colors.white,
-                          size: 35,
-                        ),
-                        Text(
-                          "Name",
-                          style: TextStyle(color: Colors.white),
-                        )
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 15),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: const [
-                        Icon(
-                          Icons.edit,
-                          color: Colors.white,
-                          size: 35,
-                        ),
-                        Text(
-                          "Name",
-                          style: TextStyle(color: Colors.white),
-                        )
-                      ],
-                    ),
-                  ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
         ),

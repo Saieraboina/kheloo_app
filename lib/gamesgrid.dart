@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:kheloo_app/category_grid/data/category_data.dart';
 
-import 'package:kheloo_app/main.dart';
 
 class GamesGrid extends StatefulWidget {
   const GamesGrid({Key? key, }) : super(key: key);

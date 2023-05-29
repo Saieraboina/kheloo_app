@@ -1,4 +1,3 @@
-import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
@@ -6,7 +5,7 @@ import 'package:video_player/video_player.dart';
 class PlayVideo extends StatefulWidget {
   final VideoType type;
   final String path;
-  const PlayVideo({ required this.type, required this.path});
+  const PlayVideo({super.key,  required this.type, required this.path});
 
   @override
   State<PlayVideo> createState() => _PlayVideoState();
@@ -71,7 +70,7 @@ class _PlayVideoState extends State<PlayVideo> {
 
 class Video extends StatefulWidget {
   Video(
-      {
+      {super.key,
       required this.videoPlayerController,
       required this.isFinished});
   final VideoPlayerController videoPlayerController;

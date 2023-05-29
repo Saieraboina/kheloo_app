@@ -4,3 +4,4 @@ class Data {
 
   Data({this.image, required this.text});
 }
+
